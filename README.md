@@ -4,8 +4,6 @@
     sudo cp -r TITA-OTA/ /usr/
     sudo cp /usr/TITA-OTA/ota_lib/*.so /usr/lib
     sudo cp /usr/TITA-OTA/ota_lib/otafifth_demo /usr/bin
-    sudo pip install pycryptodome
-    sudo pip install crcmod
     sudo chmod 777 /usr/bin/otafifth_demo
     
 ### To run control board upgrade:
