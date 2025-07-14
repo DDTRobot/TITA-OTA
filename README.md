@@ -1,9 +1,9 @@
 
 ### To install dependencies:
-    sudo git clone http://git.ddt.dev:9281/wuyunzhou/motor_upgrade.git
-    sudo cp -r motor_upgrade/ /usr/
-    sudo cp /usr/motor_upgrade/ota_lib/*.so /usr/lib
-    sudo cp /usr/motor_upgrade/ota_lib/otafifth_demo /usr/bin
+    sudo git clone https://github.com/DDTRobot/TITA-OTA
+    sudo cp -r TITA-OTA/ /usr/
+    sudo cp /usr/TITA-OTA/ota_lib/*.so /usr/lib
+    sudo cp /usr/TITA-OTA/ota_lib/otafifth_demo /usr/bin
     sudo pip install pycryptodome
     sudo pip install crcmod
     sudo chmod 777 /usr/bin/otafifth_demo
@@ -12,10 +12,8 @@
     otafifth_demo -f $BIN_PATH
     
 ### To run motor upgrade:
-    sudo /usr/motor_upgrade/run.sh -t $MOTOR_TYPE -i $MOTOR_ID -s $CANBUS_ID -b $MOTOR_BIN_PATH
+    sudo /usr/TITA-OTA/run.sh -t $MOTOR_TYPE -i $MOTOR_ID -s $CANBUS_ID -b $MOTOR_BIN_PATH
 
-### To get motor lastest bin:
-    git clone http://git.ddt.dev:9281/wuyunzhou/motor-patch.git
 
 ### To auto upgrade all motor and control board:
     cd motor-patch/
